@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+<img src="{{url_for('static', filename='/riot_resources/13.15.1/img/profileicon/{}.png'.format(profile_data['profileIconId']))}}" />
+<p>{{profile_data['profileIconId']}}</p>
+</div>
+{% endblock %}
