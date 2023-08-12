@@ -1,9 +1,17 @@
 {% extends 'base.html' %}
 
 {% block head %}
-
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 {% endblock %}
 
 {% block body %}
-<h1>Template</h1>
+<div class="content">
+    <select name= servers>
+        {% for server in servers %}
+        <option value= "{{server}}" SELECTED>{{server}}</option>"
+        {% endfor %}
+    </select>
+    <input name="summonerName">
+    <input type="submit" name="submit_button" value="Search">
+</div>
 {% endblock %}

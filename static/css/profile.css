@@ -1,0 +1,12 @@
+.content{
+    text-align: center;
+    padding-top: 25px;
+}
+.img{
+    border: 2px solid red;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
